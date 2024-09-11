@@ -3,7 +3,16 @@ class MoviesController < ApplicationController
 
   # GET /movies or /movies.json
   def index
-    @movies = Movie.all
+    session[:sort] = params[:sort] if params[:sort]
+    session[:direction] = params[:direction] if params[:direction]
+
+    # Use session params if no new params are passed
+    @sort_column = session[:sort] || 'title'
+    @sort_direction = session[:direction] || 'asc'
+    
+    puts @sort_column
+    puts @sort_direction
+    @movies = Movie.order("#{@sort_column} #{@sort_direction}")
   end
 
   # GET /movies/1 or /movies/1.json
@@ -67,4 +76,5 @@ class MoviesController < ApplicationController
     def movie_params
       params.require(:movie).permit(:title, :rating, :description, :release_date)
     end
+
 end

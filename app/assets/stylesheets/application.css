@@ -13,3 +13,157 @@
  *= require_tree .
  *= require_self
  */
+
+#movies {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#movies td, #movies th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#movies tr:nth-child(even){background-color: #f2f2f2;}
+
+#movies tr:hover {background-color: #ddd;}
+
+#movies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #077999;
+  color: black;
+}
+
+.btn-custom {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #077999;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+.btn-show {
+    background-color: #009933; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 5px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Keep inline */
+    font-size: 14px; /* Adjust font size */
+    margin: 4px 2px; /* Add small margin */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .btn-show:hover {
+    background-color: #016221; /* Darker green on hover */
+  }
+  
+  /* Custom styles for Delete button */
+  .btn-delete {
+    background-color: #e60000; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 5px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Keep inline */
+    font-size: 14px; /* Adjust font size */
+    margin: 4px 2px; /* Add small margin */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .btn-delete:hover {
+    background-color: #aa0101; /* Darker red on hover */
+  }
+
+  .btn-edit {
+    background-color: #0d7cd7; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 5px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Keep inline */
+    font-size: 14px; /* Adjust font size */
+    margin: 4px 2px; /* Add small margin */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .btn-edit:hover {
+    background-color: #0a5c9e; /* Darker blue on hover */
+  }
+
+.btn-custom:hover {
+  background-color: #076a86;
+}
+
+html {
+    /* height: 100%; */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+body {
+    width: 60%;               /* Set width for the page */
+    max-width: 1200px;         /* Optional: max width */
+    background-color: #f4f4f4; /* Background color for the container */
+    padding: 30px;             /* Padding inside the container */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+th a {
+    text-decoration: none;
+    color: inherit;
+    /* margin-left: 80%; */
+    font-size: 20px;
+  }
+  
+  /* th .arrow {
+    font-size: 50px;
+    margin-left: 80%;
+  } */
+
+  /* Highlight for ascending sorted column */
+/* .highlight-asc {
+    background-color: #b2e6f54a !important; 
+    color: black !important;
+  } */
+  
+  /* Highlight for descending sorted column */
+  /* .highlight-desc {
+    background-color: #ffd3d365 !important; */
+    /* color: white !important; */
+  /* } */
+  
+  /* Styling for the sorting arrows in the links */
+  th a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+  }
+  
+  th a:hover {
+    color: #333;
+  }
+  
+  .highlight-column-asc {
+    background-color: #b2e6f54a !important; /* Light green for ascending column */
+  }
+  
+  .highlight-column-desc {
+    background-color: #ffd3d365 !important; /* Light red for descending column */
+  }

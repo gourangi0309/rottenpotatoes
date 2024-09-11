@@ -1,16 +1,39 @@
-<p style="color: green"><%= notice %></p>
+<h2 style="font-family: Arial, Helvetica, sans-serif;">MOVIES</h2>
 
-<% content_for :title, "Movies" %>
+<table class="table table-striped col-md-12" id="movies">
+  <thead>
+    <tr>
+      <th class="<%= 'highlight-asc' if params[:sort] == 'title' && params[:direction] == 'asc' %> <%= 'highlight-desc' if params[:sort] == 'title' && params[:direction] == 'desc' %>">
+        Movie Title 
+        <%= link_to "#{params[:sort] == 'title' ? (params[:direction] == 'asc' ? '↑' : '↓') : '↕'}", movies_path(sort: 'title', direction: params[:direction] == 'asc' ? 'desc' : 'asc'), data: { turbo: "false" } %>
+      </th>
+      <th class="<%= 'highlight-asc' if params[:sort] == 'rating' && params[:direction] == 'asc' %> <%= 'highlight-desc' if params[:sort] == 'rating' && params[:direction] == 'desc' %>">
+        Rating 
+        <%= link_to "#{params[:sort] == 'rating' ? (params[:direction] == 'asc' ? '↑' : '↓') : '↕'}", movies_path(sort: 'rating', direction: params[:direction] == 'asc' ? 'desc' : 'asc'), data: { turbo: "false" } %>
+      </th>
+      <th class="<%= 'highlight-asc' if params[:sort] == 'release_date' && params[:direction] == 'asc' %> <%= 'highlight-desc' if params[:sort] == 'release_date' && params[:direction] == 'desc' %>">
+        Release Date 
+        <%= link_to "#{params[:sort] == 'release_date' ? (params[:direction] == 'asc' ? '↑' : '↓') : '↕'}", movies_path(sort: 'release_date', direction: params[:direction] == 'asc' ? 'desc' : 'asc'), data: { turbo: "false" } %>
+      </th>
+      <th>More Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td class="<%= 'highlight-column-asc' if params[:sort] == 'title' && params[:direction] == 'asc' %> <%= 'highlight-column-desc' if params[:sort] == 'title' && params[:direction] == 'desc' %>">
+          <%= movie.title %>
+        </td>
+        <td  class="<%= 'highlight-column-asc' if params[:sort] == 'rating' && params[:direction] == 'asc' %> <%= 'highlight-column-desc' if params[:sort] == 'rating' && params[:direction] == 'desc' %>">
+          <%= movie.rating %>
+        </td>
+        <td  class="<%= 'highlight-column-asc' if params[:sort] == 'release_date' && params[:direction] == 'asc' %> <%= 'highlight-column-desc' if params[:sort] == 'release_date' && params[:direction] == 'desc' %>">
+          <%= movie.release_date %>
+        </td>
+        <td><%= link_to 'Show movie', movie_path(movie), class: 'btn-show' %> <%= link_to 'Edit movie', edit_movie_path(movie), class: 'btn-edit' %> <%= link_to 'Delete movie', movie, method: :delete, class: 'btn-delete' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'Add new movie', new_movie_path, class: 'btn-custom' %>
 
-<h1>Movies</h1>
-
-<div id="movies">
-  <% @movies.each do |movie| %>
-    <%= render movie %>
-    <p>
-      <%= link_to "Show this movie", movie %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New movie", new_movie_path %>

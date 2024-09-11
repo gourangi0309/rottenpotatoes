@@ -7,5 +7,6 @@
 <br>
 
 <div>
-  <%= link_to "Back to movies", movies_path %>
+  <%= link_to "Back to movies", movies_path(sort: session[:sort], direction: session[:direction]) %>
 </div>
+
