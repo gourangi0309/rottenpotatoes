@@ -1,6 +1,6 @@
 # README
 
-## RottenPotatoes
+* RottenPotatoes
 
 ## App URL: https://rottenpotatoes-se-3bc6c273a533.herokuapp.com/
 
@@ -45,12 +45,12 @@
     Seed the data:
     `rails db:seed`
 
-## How to run the server: 
+* How to run the server: 
 
     To run the server in local machine:
-    `rails server`
+    ## `rails server`
 
-## Crud Operation supported:
+* Crud Operation supported:
     
     The supported CRUD operations are:
     1. Create new: Create a new movie
