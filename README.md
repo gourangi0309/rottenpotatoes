@@ -2,9 +2,9 @@
 
 * RottenPotatoes
 
-## App URL: https://rottenpotatoes-se-3bc6c273a533.herokuapp.com/
+* App URL: https://rottenpotatoes-se-3bc6c273a533.herokuapp.com/
 
-## Ruby version: ruby 3.3.4 (2024-07-09 revision be1089c8ec) [x86_64-linux]
+* Ruby version: ruby 3.3.4 (2024-07-09 revision be1089c8ec) [x86_64-linux]
 
 ## System dependencies:
     bootsnap
@@ -45,14 +45,13 @@
     Seed the data:
     `rails db:seed`
 
-* How to run the server: 
+## How to run the server: 
 
     To run the server in local machine:
-    ## `rails server`
+    `rails server`
 
-* Crud Operation supported:
+## Crud Operation supported:
     
-    The supported CRUD operations are:
     1. Create new: Create a new movie
     2. Show: Displays the information of the movie
     3. Update: Updated the Movie information
