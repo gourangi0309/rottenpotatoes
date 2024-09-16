@@ -1,6 +1,7 @@
 # README
 
 **RottenPotatoes**
+The application lists the movies present in the database with their ratings, and released data. It supports Crud operations like create, read, update and delete. 
 
 **App URL:** [https://rottenpotatoes-se-3bc6c273a533.herokuapp.com/](https://rottenpotatoes-se-3bc6c273a533.herokuapp.com/)
 
