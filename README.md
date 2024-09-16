@@ -1,24 +1,59 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## RottenPotatoes
 
-Things you may want to cover:
+## App URL: https://rottenpotatoes-se-3bc6c273a533.herokuapp.com/
 
-* Ruby version
+## Ruby version: ruby 3.3.4 (2024-07-09 revision be1089c8ec) [x86_64-linux]
 
-* System dependencies
+## System dependencies:
+    bootsnap
+    brakeman
+    capybara
+    debug
+    importmap-rails
+    jbuilder
+    pg
+    puma (>= 5.0)
+    rails (~> 7.2.1)
+    rubocop-rails-omakase
+    selenium-webdriver
+    sprockets-rails
+    sqlite3
+    stimulus-rails
+    turbo-rails
+    tzinfo-data
+    web-console
 
-* Configuration
+## Database Schema
+    create_table "movies", force: :cascade do |t|
+    t.string "title"
+    t.string "rating"
+    t.text "description"
+    t.datetime "release_date"
+    t.timestamps
 
-* Database creation
+## Database initialization
+    Each migration needs a name, and since this migration will create the movies table, we choose the name create_movies. Run the command:
+    `rails generate migration create_movies`
 
-* Database initialization
+    apply the migration and create this table: `rails db:migrate`
 
-* How to run the test suite
+    generate the model and the migration all at once using:
+    `rails generate model Movie title:string rating:string description:text release_date:datetime`
 
-* Services (job queues, cache servers, search engines, etc.)
+    Seed the data:
+    `rails db:seed`
 
-* Deployment instructions
+## How to run the server: 
 
-* ...
+    To run the server in local machine:
+    `rails server`
+
+## Crud Operation supported:
+    
+    The supported CRUD operations are:
+    1. Create new: Create a new movie
+    2. Show: Displays the information of the movie
+    3. Update: Updated the Movie information
+    4. Detele: Deletes a movie from the database
