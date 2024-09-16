@@ -1,6 +1,7 @@
+<div class="form-submit-container" style="padding-left: 12%;">
 <%= form_with(model: movie) do |form| %>
   <% if movie.errors.any? %>
-    <div style="color: red">
+    <div style="background-color: #ffd3d365;">
       <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
 
       <ul>
@@ -12,7 +13,7 @@
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
+    <%= form.label :title, style: "display: block;" %>
     <%= form.text_field :title %>
   </div>
 
@@ -32,6 +33,7 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class: 'btn-form' %>
   </div>
 <% end %>
+</div>

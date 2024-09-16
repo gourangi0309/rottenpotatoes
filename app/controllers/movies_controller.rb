@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
     # Use session params if no new params are passed
     @sort_column = session[:sort] || 'title'
     @sort_direction = session[:direction] || 'asc'
-    
+
     puts @sort_column
     puts @sort_direction
     @movies = Movie.order("#{@sort_column} #{@sort_direction}")
@@ -37,6 +37,9 @@ class MoviesController < ApplicationController
         format.html { redirect_to movie_url(@movie), notice: "Movie was successfully created." }
         format.json { render :show, status: :created, location: @movie }
       else
+        if @movie.errors[:title].include?("has already been taken")
+          flash.now[:alert] = "A movie with this title already exists."
+        end
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @movie.errors, status: :unprocessable_entity }
       end

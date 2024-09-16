@@ -49,6 +49,24 @@
   margin-top: 20px;
 }
 
+.btn-form{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #077999;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;             /* Use Flexbox for layout */
+    gap: 10px;                 /* Optional: space between buttons */
+    justify-content: center;   /* Optional: center buttons horizontally */
+}
 
 .btn-show {
     background-color: #009933; /* Green background */
@@ -109,6 +127,8 @@
   background-color: #076a86;
 }
 
+
+
 html {
     /* height: 100%; */
     margin: 0;
@@ -124,6 +144,45 @@ body {
     padding: 30px;             /* Padding inside the container */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
 }
+
+.index-page {
+    width: 60%;               /* Adjust width for index page */
+}
+
+/* Styles for show page */
+.show-page {
+    width: 30%;               /* Adjust width for show page */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    
+    /* margin: 0;               Remove default margin */
+    background-color: #f4f4f4;
+}
+
+.default-page{
+    width: 25%;               /* Adjust width for show page */
+    /* display: flex; */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    /* text-align: center; */
+    /* margin: 0;               Remove default margin */
+    background-color: #f4f4f4;
+}
+
+/* .movie-details {
+    text-align: center;      /* Center text inside the container */
+/* }  */
+
+
+.page-container {
+  padding-left: 20%;          /* Optional: Add some padding */
+}
+
+/* Additional styles
+.default-page {
+    /* Any other default styles */
+/* }  */
 
 th a {
     text-decoration: none;
