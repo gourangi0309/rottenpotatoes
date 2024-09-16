@@ -63,64 +63,64 @@
 }
 
 .btn-group {
-    display: flex;             /* Use Flexbox for layout */
-    gap: 10px;                 /* Optional: space between buttons */
-    justify-content: center;   /* Optional: center buttons horizontally */
+    display: flex;             
+    gap: 10px;                 
+    justify-content: center;   
 }
 
 .btn-show {
-    background-color: #009933; /* Green background */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    padding: 5px 20px; /* Add some padding */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Keep inline */
-    font-size: 14px; /* Adjust font size */
-    margin: 4px 2px; /* Add small margin */
-    cursor: pointer; /* Change cursor to pointer */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #009933; 
+    color: white;
+    border: none; 
+    padding: 5px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
   }
   
   .btn-show:hover {
-    background-color: #016221; /* Darker green on hover */
+    background-color: #016221;
   }
   
   /* Custom styles for Delete button */
   .btn-delete {
-    background-color: #e60000; /* Red background */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    padding: 5px 20px; /* Add some padding */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Keep inline */
-    font-size: 14px; /* Adjust font size */
-    margin: 4px 2px; /* Add small margin */
-    cursor: pointer; /* Change cursor to pointer */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #e60000; 
+    color: white; 
+    border: none;
+    padding: 5px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
   }
   
   .btn-delete:hover {
-    background-color: #aa0101; /* Darker red on hover */
+    background-color: #aa0101; 
   }
 
   .btn-edit {
-    background-color: #0d7cd7; /* Blue background */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    padding: 5px 20px; /* Add some padding */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Keep inline */
-    font-size: 14px; /* Adjust font size */
-    margin: 4px 2px; /* Add small margin */
-    cursor: pointer; /* Change cursor to pointer */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #0d7cd7; 
+    color: white; 
+    border: none;
+    padding: 5px 20px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
   }
   
   .btn-edit:hover {
-    background-color: #0a5c9e; /* Darker blue on hover */
+    background-color: #0a5c9e; 
   }
 
 .btn-custom:hover {
@@ -133,56 +133,45 @@ html {
     /* height: 100%; */
     margin: 0;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
+    justify-content: center; 
+    align-items: center;     
 }
 
 body {
-    width: 60%;               /* Set width for the page */
-    max-width: 1200px;         /* Optional: max width */
-    background-color: #f4f4f4; /* Background color for the container */
-    padding: 30px;             /* Padding inside the container */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    width: 60%;               
+    max-width: 1200px;         
+    background-color: #f4f4f4; 
+    padding: 30px;             
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
 }
 
 .index-page {
-    width: 60%;               /* Adjust width for index page */
+    width: 60%;               
 }
 
 /* Styles for show page */
 .show-page {
-    width: 30%;               /* Adjust width for show page */
+    width: 30%;               
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    
-    /* margin: 0;               Remove default margin */
+    justify-content: center; 
+    align-items: center;     
     background-color: #f4f4f4;
 }
 
 .default-page{
     width: 25%;               /* Adjust width for show page */
-    /* display: flex; */
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    /* text-align: center; */
-    /* margin: 0;               Remove default margin */
+    
+    justify-content: center; 
+    align-items: center;     
     background-color: #f4f4f4;
 }
 
-/* .movie-details {
-    text-align: center;      /* Center text inside the container */
-/* }  */
-
 
 .page-container {
-  padding-left: 20%;          /* Optional: Add some padding */
+  padding-left: 20%;       
 }
 
-/* Additional styles
-.default-page {
-    /* Any other default styles */
-/* }  */
+
 
 th a {
     text-decoration: none;
@@ -190,23 +179,6 @@ th a {
     /* margin-left: 80%; */
     font-size: 20px;
   }
-  
-  /* th .arrow {
-    font-size: 50px;
-    margin-left: 80%;
-  } */
-
-  /* Highlight for ascending sorted column */
-/* .highlight-asc {
-    background-color: #b2e6f54a !important; 
-    color: black !important;
-  } */
-  
-  /* Highlight for descending sorted column */
-  /* .highlight-desc {
-    background-color: #ffd3d365 !important; */
-    /* color: white !important; */
-  /* } */
   
   /* Styling for the sorting arrows in the links */
   th a {
@@ -220,9 +192,9 @@ th a {
   }
   
   .highlight-column-asc {
-    background-color: #b2e6f54a !important; /* Light green for ascending column */
+    background-color: #b2e6f54a !important; 
   }
   
   .highlight-column-desc {
-    background-color: #ffd3d365 !important; /* Light red for descending column */
+    background-color: #ffd3d365 !important; 
   }
